@@ -12,7 +12,7 @@ body {
   left: 0;
   top: 0;
   bottom: 0;
-  width: 196px;
+  width: 190px;
   background-color: #000000;
   padding: 24px;
 }
@@ -35,12 +35,12 @@ body {
 .sidebar .navigation ul li a:hover,
 .sidebar .navigation ul li a:active,
 .sidebar .navigation ul li a:focus {
-  color: #ffffff;
+  color: hsl(60, 16%, 30%);
 }
 .sidebar .navigation ul li a:hover .fa,
 .sidebar .navigation ul li a:active .fa,
 .sidebar .navigation ul li a:focus .fa {
-  color: #b3b3b3;
+  color: hsl(60, 16%, 30%);
 }
 .sidebar .navigation ul li .fa {
   font-size: 20px;
@@ -70,7 +70,7 @@ body {
 .sidebar .policies ul li a:hover,
 .sidebar .policies ul li a:active,
 .sidebar .policies ul li a:focus {
-  text-decoration: underline;
+  text-decoration:#1db954;
 }
 
 .main-container {
@@ -86,7 +86,7 @@ body {
 }
 .topbar .prev-next-buttons button {
   color: #7a7a7a;
-  cursor: not-allowed;
+  cursor:none;
   width: 34px;
   height: 34px;
   border-radius: 100%;
@@ -96,8 +96,9 @@ body {
   margin-right: 10px;
 }
 .topbar .navbar {
-  display: flex;
-  align-items: center;
+  display:flex;
+  justify-content: space-evenly;
+  align-items: stretch;
 }
 .topbar .navbar ul {
   list-style: none;
@@ -118,13 +119,7 @@ body {
 .topbar .navbar ul li a:active,
 .topbar .navbar ul li a:focus {
   color: #ffffff;
-  font-size: 15px;
-}
-.topbar .navbar ul li.divider {
-  color: #ffffff;
-  font-size: 26px;
-  margin: 0px 20px;
-  width: auto;
+  font-size: 20px;
 }
 .topbar .navbar button {
   background-color: #ffffff;
@@ -140,10 +135,10 @@ body {
 .topbar .navbar button:hover,
 .topbar .navbar button:active,
 .topbar .navbar button:focus {
-  background-color: #f2f2f2;
+  background-color: #696336;
 }
 .spotify-playlists {
-  padding: 20px 40px;
+  padding: 10px;
 }
 .spotify-playlists h2 {
   color: #ffffff;
@@ -151,9 +146,8 @@ body {
   margin-bottom: 20px;
 }
 .spotify-playlists .list {
-  display: flex;
+  display:flex;
   gap: 20px;
-  overflow: hidden;
 }
 .spotify-playlists .list .item {
   min-width: 140px;
@@ -213,22 +207,22 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to right, #ae2896, #509bf5);
+  background: linear-gradient(to right, #9ea876, #6a8a00);
   padding: 15px 40px;
   display: flex;
   justify-content: space-between;
 }
 .preview h6 {
-  color: #ffffff;
+  color: #000000;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 00;
   font-size: 12px;
   margin-bottom: 10px;
 }
 .preview p {
-  color: #ffffff;
+  color: #000000;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
 }
 .preview button {
   background-color: #ffffff;
@@ -236,7 +230,14 @@ body {
   font-size: 16px;
   font-weight: bold;
   padding: 14px 30px;
-  border: 0px;
-  border-radius: 40px;
+  border: 4px;
+  border-radius: 100PX;
   cursor: pointer;
 }
+.preview .button :hover,
+.preview .button:active,
+.preview .button:focus{
+  background-color: #6a8a00;
+  font-weight: 900;
+}
+
